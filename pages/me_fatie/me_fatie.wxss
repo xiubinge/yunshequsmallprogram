@@ -1,0 +1,230 @@
+/* pages/me_fatie/me_fatie.wxss */
+page{
+    padding-bottom:20rpx;
+    box-sizing:border-box;
+}
+.con{
+  width:100%;
+  height: auto;
+  margin-top: 30rpx;
+  background-color: #fff;
+  padding:0 24rpx;
+  box-sizing:border-box;
+}
+.con_header{
+  width:100%;
+  height: auto;
+  padding:27rpx 0;
+ align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.c_h_img{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20rpx;
+}
+.c_h_img image{
+  width:90rpx;
+  height: 90rpx;
+}
+.c_h_center{
+  webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.c_h_top{
+  overflow: auto;
+}
+.c_h_bottom{
+  overflow: auto;
+}
+.block{
+  display: inline-block;
+  margin-right: 12rpx;
+  float: left;
+}
+.c_name{
+  font-size:30rpx;
+  color:#333;
+  margin-right: 15rpx;
+}
+.idcard{
+  background-color: #fe7a7a;
+  color:#fff;
+  height: 30rpx;
+  padding:0 7rpx;
+  box-sizing:border-box;
+  font-size: 22rpx;
+  line-height: 30rpx;
+  border-radius: 4rpx;
+  margin-top: 4rpx;
+}
+.card{
+  background-color: #55b3fb;
+  color:#fff;
+  height: 30rpx;
+  padding:0 7rpx;
+  box-sizing:border-box;
+  font-size: 22rpx;
+  line-height: 30rpx;
+  border-radius: 4rpx;
+  margin-top: 4rpx;
+}
+.c_h_bottom{
+  font-size: 24rpx;
+  margin-top: 5rpx;
+}
+.c_time{
+  color:#999;
+}
+.c_type{
+  color:#fe7a7a;
+}
+.cTitle{
+  width:100%;
+  height: auto;
+  font-size: 34rpx;
+  color:#333;
+  font-weight: 700;
+  overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.c_pro{
+  margin-top: 20rpx;
+  width:100%;
+  height: auto;
+  color:#666;
+  font-size: 28rpx;
+  line-height: 48rpx;
+  overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+.c_zhankai{
+  font-size: 28rpx;
+  line-height: 48rpx;
+  color:#55b3fb;
+}
+.con_pic{
+  width:100%;
+  height: auto;
+  overflow: auto;
+  margin-left: 1.5%;
+  padding-bottom:17rpx;
+  box-sizing:border-box;
+}
+.pic_list{
+  width:30%;
+  height: auto;
+  float: left;
+  margin-right: 3.3%;
+  margin-top:17rpx;
+}
+
+.con_pic image{
+  width:100%;
+}
+.c_address{
+  width:100%;
+   align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 24rpx;
+    color:#999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.c_add_icon{
+  display: inline-block;
+  width:22rpx;
+  height: 31rpx;
+  vertical-align: -4rpx;
+  margin-right:11rpx; 
+ 
+}
+.c_add_icon image{
+  width:22rpx;
+  height: 31rpx;
+}
+.addIn{
+  webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width:100%;
+}
+.cIcon{
+  padding:27rpx 0;
+  box-sizing:border-box;
+  width:100%;
+  align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.icon_img{
+  display: inline-block;
+  height: auto;
+  padding-left:30rpx;
+  font-size: 28rpx;
+  color:#999;
+}
+.icon_img image{
+  width:40rpx;
+  height: auto;
+  margin-right: 10rpx;
+  vertical-align: -4rpx;
+
+}
+.Icon_left{
+  webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 24rpx;
+    color:#999;
+}
+.c_h_right_delete{
+    display: inline-block;
+    padding:5rpx;
+    box-sizing:border-box;
+}
+.c_h_right_delete image{
+    width:33rpx;
+    height: 35rpx;
+}

@@ -1,0 +1,60 @@
+/* pages/about/about.wxss */
+page{
+    background-color: #fff;
+}
+.about_header{
+    padding-top:88rpx;
+    box-sizing:border-box;
+    padding:0 30rpx;
+    padding-top: 88rpx;
+    box-sizing:border-box;
+}
+.ab_img{
+    width:100%;
+    text-align: center;
+}
+.ab_img image{
+    width:150rpx;
+    height:150rpx;
+    border:1rpx solid #eee;
+}
+.ab_title{
+    text-align: center;
+    font-size: 32rpx;
+    color:#333;
+    margin-top: 20rpx;
+    text-align: center;
+    font-size: 32rpx;
+}
+.ab_txt{
+    text-align: center;
+    font-size: 26rpx;
+    color:#999;
+    margin-top:10rpx;
+}
+.about_bot{
+    width:100%;
+    height: auto;
+    background-color: #f5f6f9;
+    padding:55rpx;
+    box-sizing:border-box;
+    position: absolute;
+    bottom:0;
+    left: 0;
+}
+.ab_bot_img{
+    text-align: center;
+}
+.ab_bot_img image{
+    width:200rpx;
+    height: 200rpx;
+}
+.ab_txt{
+    font-size: 24rpx;
+    color:#999;
+    line-height: 28rpx;
+    margin-top: 30rpx;
+}
+.ab_txt.ab_txt1{
+    font-size: 26rpx;
+}

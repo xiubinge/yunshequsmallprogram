@@ -1,0 +1,10 @@
+<!--pages/jubao_detail/jubao_detail.wxml-->
+
+<view class="jb_d_tit"> 请描述您的举报原因</view>
+<view class="jb_d_con">
+    <textarea placeholder="诱导分享" maxlength="-1" class="jb_d_txt"/>
+    <view class="num">3/50</view>
+</view>
+<view class="jb_d_button">
+    <button class="btn_in">提交</button>
+</view>

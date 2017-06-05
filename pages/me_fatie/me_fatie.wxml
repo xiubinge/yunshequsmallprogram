@@ -1,0 +1,107 @@
+<!--pages/me_fatie/me_fatie.wxml-->
+<view class="con">
+  <view class="con_header">
+    <view class="c_h_img"><image src="../../images/index/24.png"></image></view>
+    <view class="c_h_center">
+      <view class="c_h_top">
+        <view class="block c_name">小小牵牛花</view>
+        <view class="block idcard">VIP4</view>
+        <view class="block card">管理员</view>
+      </view>
+      <view class="c_h_bottom">
+        <view class="block c_time">14小时前</view>
+        <view class="block c_type">多肉</view>
+      </view>
+    </view>
+    <view class="c_h_right_delete">
+        <image src="../../images/index/33.png"></image>
+    </view>
+  </view>
+  <view class="conten">
+    <view class="cTitle">
+    <navigator url="../detail/detail" hover-class="navigator-hover">胡歌教你怎么养一盆好看的多肉植物          </navigator></view>
+    <view class="c_pro">
+      <navigator url="../detail/detail" hover-class="navigator-hover">我该怎么说，怎么说还好叶子这么大，好不容易大一点换了个花盆，就看到大降价。叶子小叶子郁郁葱葱的真的看耶是个多听你的学到哪去呢就看到大降价。叶子小叶子郁郁葱葱叶子郁郁葱葱叶子郁郁葱葱叶子郁...展开我该怎么说，怎么说还好叶子这么大，好不容易大一点换了个花盆，就看到大降价。叶子小叶子郁郁葱葱的真的看耶是个多听你的学到哪去呢就看到大降价。叶子小叶子郁郁葱葱叶子郁郁葱葱叶子郁郁葱葱叶子郁...展开我该怎么说，怎么说还好叶子这么大，好不容易大一点换了个花盆，就看到大降价。叶子小叶子郁郁葱葱的真的看耶是个多听你的学到哪去呢就看到大降价。叶子小叶子郁郁葱葱叶子郁郁葱葱叶子郁郁葱葱叶子郁...展开</navigator>
+    </view>
+    <view class="c_zhankai">展开</view>
+  </view>
+  <view class="con_pic">
+    <view class="pic_list">
+      <image src="../../images/index/25.png" mode="widthFix"></image>
+    </view>
+    <view class="pic_list">
+      <image src="../../images/index/25.png" mode="widthFix"></image>
+    </view>
+    <view class="pic_list">
+      <image src="../../images/index/25.png" mode="widthFix"></image>
+    </view>
+  </view>
+  <view class="c_address">
+    <view class="addIn">
+      <view class="c_add_icon"><image src="../../images/index/09.png"></image></view>赤峰市林西县金城街
+    </view>
+  </view>
+  <view class="cIcon">
+    <view class="Icon_left">浏览89次</view>
+    <view class="Icon_right">
+      <view class="icon_img icon01"><image src="../../images/index/10.png" mode="widthFix"></image>23</view>
+      <view class="icon_img icon02"><image src="../../images/index/11.png" mode="widthFix"></image>34</view>
+      <view class="icon_img icon03"><image src="../../images/index/13.png" mode="widthFix"></image>56</view>
+      <view class="icon_img icon04"><image src="../../images/index/14.png" mode="widthFix"></image>45</view>      
+    </view>
+  </view>
+ 
+</view>
+<view class="con">
+  <view class="con_header">
+    <view class="c_h_img"><image src="../../images/index/24.png"></image></view>
+    <view class="c_h_center">
+      <view class="c_h_top">
+        <view class="block c_name">小小牵牛花</view>
+        <view class="block idcard">VIP4</view>
+        <view class="block card">管理员</view>
+      </view>
+      <view class="c_h_bottom">
+        <view class="block c_time">14小时前</view>
+        <view class="block c_type">多肉</view>
+      </view>
+    </view>
+    <view class="c_h_right_delete">
+        <image src="../../images/index/33.png"></image>
+    </view>
+  </view>
+  <view class="conten">
+    <view class="cTitle">
+    <navigator url="../detail/detail" hover-class="navigator-hover">胡歌教你怎么养一盆好看的多肉植物          </navigator></view>
+    <view class="c_pro">
+      <navigator url="../detail/detail" hover-class="navigator-hover">我该怎么说，怎么说还好叶子这么大，好不容易大一点换了个花盆，就看到大降价。叶子小叶子郁郁葱葱的真的看耶是个多听你的学到哪去呢就看到大降价。叶子小叶子郁郁葱葱叶子郁郁葱葱叶子郁郁葱葱叶子郁...展开我该怎么说，怎么说还好叶子这么大，好不容易大一点换了个花盆，就看到大降价。叶子小叶子郁郁葱葱的真的看耶是个多听你的学到哪去呢就看到大降价。叶子小叶子郁郁葱葱叶子郁郁葱葱叶子郁郁葱葱叶子郁...展开我该怎么说，怎么说还好叶子这么大，好不容易大一点换了个花盆，就看到大降价。叶子小叶子郁郁葱葱的真的看耶是个多听你的学到哪去呢就看到大降价。叶子小叶子郁郁葱葱叶子郁郁葱葱叶子郁郁葱葱叶子郁...展开</navigator>
+    </view>
+    <view class="c_zhankai">展开</view>
+  </view>
+  <view class="con_pic">
+    <view class="pic_list">
+      <image src="../../images/index/25.png" mode="widthFix"></image>
+    </view>
+    <view class="pic_list">
+      <image src="../../images/index/25.png" mode="widthFix"></image>
+    </view>
+    <view class="pic_list">
+      <image src="../../images/index/25.png" mode="widthFix"></image>
+    </view>
+  </view>
+  <view class="c_address">
+    <view class="addIn">
+      <view class="c_add_icon"><image src="../../images/index/09.png"></image></view>赤峰市林西县金城街
+    </view>
+  </view>
+  <view class="cIcon">
+    <view class="Icon_left">浏览89次</view>
+    <view class="Icon_right">
+      <view class="icon_img icon01"><image src="../../images/index/10.png" mode="widthFix"></image>23</view>
+      <view class="icon_img icon02"><image src="../../images/index/11.png" mode="widthFix"></image>34</view>
+      <view class="icon_img icon03"><image src="../../images/index/13.png" mode="widthFix"></image>56</view>
+      <view class="icon_img icon04"><image src="../../images/index/14.png" mode="widthFix"></image>45</view>      
+    </view>
+  </view>
+ 
+</view>

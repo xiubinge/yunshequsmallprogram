@@ -1,0 +1,38 @@
+<!--pages/jubao/jubao.wxml-->
+<view class="jb_tit">举报的原因</view>
+<view class="jb_con">
+   <view class="jb_list active">
+        欺诈
+   </view>
+   <view class="jb_list">
+        色情
+   </view>
+   <view class="jb_list">
+        政治谣言
+   </view>
+   <view class="jb_list">
+        常识性谣言
+   </view>
+   <view class="jb_list">
+        诱导分享
+   </view>
+   <view class="jb_list">
+        恶心营销
+   </view>
+   <view class="jb_list">
+        隐私信息收集
+   </view>
+   <view class="jb_list">
+        抄袭公众号文章
+   </view>
+   <view class="jb_list">
+        其他侵权类（冒名、诽谤、抄袭）
+   </view>
+   <view class="jb_list">
+        违规声明原创
+   </view>
+</view>
+<view class="jb_button">
+   <navigator url="../jubao_detail/jubao_detail" class="jb_sure" open-type="navigate">下一步</navigator>
+</view>
+

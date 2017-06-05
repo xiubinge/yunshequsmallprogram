@@ -1,0 +1,130 @@
+/* pages/me_shangjin/me_shangjin.wxss */
+page{
+    padding-bottom: 40rpx;
+    box-sizing:border-box;
+}
+.sj_header{
+    width:100%;
+    height: 280rpx;
+    background-color: #fff;
+    position: relative;
+}
+.sj_h_in{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    padding:0 30rpx;
+    box-sizing:border-box;
+}
+.sj_header_img{
+    padding-top: 60rpx;
+    box-sizing:border-box;
+    text-align: center;
+    z-index: 11;
+}
+.sj_header_img image{
+    display: inline-block;
+    width:90rpx;
+    height: 90rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    border:2rpx solid #fff;
+    overflow: hidden;
+}
+.sj_bg{
+    width:120%;
+    height: 200rpx;
+    border-radius: 100%;
+    background-color: #fe7a7a;
+    position: absolute;
+    top:-100rpx;
+    left: -10%;
+}
+.sj_name{
+    text-align: center;
+    font-size: 32rpx;
+    color:#333;
+    margin-top: 10rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.sj_tixian{
+    text-align: center;
+    font-size: 26rpx;
+    color:#999;
+    margin-top: 10rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.lei{
+    display: inline-block;
+    color:#fe7a7a;
+}
+.sj_list{
+    width:100%;
+    height: auto;
+    background-color: #fff;
+    margin-top: 30rpx;
+    padding-left: 30rpx;
+    box-sizing:border-box;
+}
+.sj_list_in{
+    display: inline-block;
+    width:100%;
+    height: auto;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100rpx;
+    border-bottom:1rpx solid #eee;
+    padding-right: 30rpx;
+    box-sizing:border-box;
+}
+.arrow{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-width: 1px 1px 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}
+.sj_left{
+    webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 32rpx;
+    color:#333;
+}
+.sj_list_in:last-child{
+    border:none;
+}
+.txt_decare{
+    padding:30rpx;
+    box-sizing:border-box;
+    font-size: 24rpx;
+    color:#999;
+    line-height: 40rpx;
+}
+.t_care{
+    margin-top: 30rpx;
+}

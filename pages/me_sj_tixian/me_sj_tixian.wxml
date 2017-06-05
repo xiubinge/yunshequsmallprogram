@@ -1,0 +1,27 @@
+<!--pages/me_sj_tixian/me_sj_tixian.wxml-->
+<view class="sj_header">
+    <view class="sj_bg"></view>
+    <view class="sj_h_in">
+        <view class="sj_header_img">
+            <image src="../../images/index/24.png"></image>
+        </view>
+        <view class="sj_name">小小牵牛花</view>
+        <view class="sj_tixian">
+            我的赏金： <view class="lei">500</view> 元
+        </view>
+    </view>
+</view>
+<view class="tx_con">
+    <view class="tx_input">
+        <input placeholder="请输入要提现的金额，不超过总赏金"  class="tx_inputIn" placeholder-style="font-family: '微软雅黑'"/>
+    </view>
+    <view class="tx_but">
+        提现
+    </view>
+</view>
+
+<!--文字说明-->
+<view class="tx_txt">
+    <view class="tx_txt_title">温馨提示：</view>
+    <view class="txt">由于微信官方限制，赏金收入超过1元才可以提现，每天可以手动提现一次，手动提现后将在1-3个工作日内入账到微信钱包中。</view>
+</view>

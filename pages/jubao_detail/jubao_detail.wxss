@@ -1,0 +1,41 @@
+/* pages/jubao_detail/jubao_detail.wxss */
+.jb_d_tit{
+    width:100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 32rpx;
+    color: #999;
+    padding:0 30rpx;
+    box-sizing:border-box;
+}
+.jb_d_con{
+    width:100%;
+    height: 270rpx;
+    background-color: #fff;
+    padding:30rpx;
+    padding-bottom: 50rpx;
+    box-sizing:border-box;
+}
+.jb_d_txt{
+    width:100%;
+    height: 100%;
+    font-size: 28rpx;
+}
+.num{
+    font-size:28rpx;
+    color:#999;
+    text-align: right;
+    margin-top: 8rpx;
+}
+.jb_d_button{
+    width:100%;
+    height: auto;
+    margin-top: 40rpx;
+    padding:0 30rpx;
+    box-sizing:border-box;
+}
+.btn_in{
+    background-color: #fe7a7a;
+    color:#fff;
+    font-size: 32rpx;
+}

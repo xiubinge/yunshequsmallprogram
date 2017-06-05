@@ -1,0 +1,267 @@
+<view class="f_header">
+  <view class="h_title">
+    <input class="input_01" placeholder="标题，可不填..." />
+  </view>
+  <view class="h_txt">
+    <view class="h_text">
+      <textarea class="text" placeholder="这一刻的想法..." auto-focus="true" maxlength="-1" />
+    </view>
+    <view class="h_bot">
+      <view class="h_b_left">
+        <view class="address">
+          <image src="../../images/fatie/01.png" class="img_address"></image>点击开启位置
+        </view>
+      </view>
+      <view class="emoji">
+        <image src="../../images/fatie/s-1.png" class="s_emoji"></image>
+      </view>
+      <view class="fabiao">
+        <button class="fb">发表</button>
+      </view>
+    </view>
+  </view>
+
+  <!--表情展开-->
+  <!--<view class="Emoji">
+    <swiper indicator-dots="true">
+      <block wx:for="{{qqface}}" wx:for-index="i">
+        <swiper-item>
+          <view class="E_e" wx:for="{{item}}" wx:for-index="j" >
+            <image src="../../images/fatie/qqface-gif/{{j<20?(i*20+j+1)+'.gif':'00.png'}}"></image>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>-->
+
+  <!--图片、语音、视频、打赏导航栏-->
+  <view class="hh_bot">
+    <view class="img_tu img">
+      <image src="../../images/fatie/t-1.png" class="tu"></image>
+    </view>
+    <view class="img_yu img">
+      <image src="../../images/fatie/y-1.png" class="yu"></image>
+    </view>
+    <view class="img_v img">
+      <image src="../../images/fatie/v-1.png" class="vedio"></image>
+    </view>
+    <view class="img_v img">
+      <image src="../../images/fatie/sa-1.png" class="sa"></image>
+    </view>
+  </view>
+
+  <!--插入图片-->
+  <view class="Img" style="display:none">
+    <view class="pic">
+      <view class="pict">
+        <image src="../../images/fatie/03.png" mode="widthFix"></image>
+        <view class="close">
+          <image src="../../images/fatie/02.png" class="close_icon"></image>
+        </view>
+      </view>
+    </view>
+    <view class="pic">
+      <view class="pict">
+        <image src="../../images/fatie/03.png" mode="widthFix"></image>
+        <view class="close">
+          <image src="../../images/fatie/02.png" class="close_icon"></image>
+        </view>
+      </view>
+    </view>
+    <view class="pic">
+      <view class="pict">
+        <image src="../../images/fatie/03.png" mode="widthFix"></image>
+        <view class="close">
+          <image src="../../images/fatie/02.png" class="close_icon"></image>
+        </view>
+      </view>
+    </view>
+    <view class="pic">
+      <view class="pict">
+        <image src="../../images/fatie/04.png" mode="widthFix"></image>
+      </view>
+    </view>
+  </view>
+
+  <!--语音-->
+  <view class="Yuyin" style="display:none">
+    <view class="YY_block">
+      <view class="arrow"></view>
+      <view class="YY_img">
+        <image src="../../images/fatie/yu-00.png">
+        </image>
+      </view>
+    </view>
+    <view class="YY_num">2'58"</view>
+  </view>
+
+  <!--视频-->
+  <view class="Vedio" style="display:none">
+    <view class="v_in">
+      <image src="../../images/fatie/05.png" mode="widthFix"></image>
+      <view class="v_close">
+        <image src="../../images/fatie/02.png"></image>
+      </view>
+      <view class="v_play">
+        <image src="../../images/fatie/06.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <!--打赏-->
+  <view class="shang" style="display:none">
+    <view class="shang_bg">
+      <image src="../../images/fatie/07.png" class="img_shang"></image>悬赏2元
+    </view>
+  </view>
+</view>
+<view class="f_type">
+  <view class="type_title">选择分类</view>
+  <view class="type_t">
+    <view class="f_btn active">全部</view>
+    <view class="f_btn">多肉</view>
+    <view class="f_btn">绿植</view>
+    <view class="f_btn">鲜花</view>
+    <view class="f_btn">盆栽</view>
+    <view class="f_btn">树苗</view>
+    <view class="f_btn">种子</view>
+    <view class="f_btn">苔藓</view>
+  </view>
+</view>
+
+<!--视频弹窗-->
+<view class="black" style="display:none">
+  <view class="blackIn">
+    <view class="white">
+      <view class="w_title">
+        <view class="w_left">
+          <button class="btn w_cell" plain>取消</button>
+        </view>
+        <view class="w_right">
+          <button class="btn w_sure" plain>发表</button>
+        </view>
+      </view>
+      <view class="w_center">
+        <view class="w_txt">
+          <view class="w_txt_tit">网络视频地址：</view>
+          <textarea placeholder="粘贴视频地址到此处，目前支持腾讯视频" class="txt_w" maxlength="-1" />
+        </view>
+      </view>
+      <view class="w_bottom">
+        <button plain class="w_btn">+添加本地视频</button>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!--打赏弹窗-->
+<view class="sh_black" style="display:none">
+  <view class="sh_in">
+    <view class="sh_white">
+      <view class="sh_title">请输入悬赏金额</view>
+      <view class="sh_shang">
+        <input placeholder="1-99元" class="sh_input" placeholder-style="color:#ccc;" type="number" />
+      </view>
+      <view class="sh_txt">请在7天内选择一条回复作为最佳答案，逾期未 设置赏金将自动支付给第一条回复的用户</view>
+      <view class="sh_btn">
+        <button class="s_btn s_cell" plain>取消</button>
+        <button class="s_btn s_sure" plain>确定</button>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!--语音弹框开始-->
+<view class="yu_black" style="display:none">
+  <view class="yu_in">
+    <view class="yu_white">
+      <view class="w_title">
+        <view class="w_left">
+          <button class="btn w_cell" plain>重新录制</button>
+        </view>
+        <view class="w_right">
+          <button class="btn w_sure" plain>完成</button>
+        </view>
+      </view>
+      <view class="yu_center">
+        <view class="yu_tit">点击开始录音</view>
+        <view class="yu_star">
+          <image src="../../images/fatie/08.png" class="yu_star_img"></image>
+        </view>
+      </view>
+      <view class="w_bottom">
+        <button plain class="w_btn">
+          <image src="../../images/fatie/09.png" class="upload"></image>
+          上传本地音频
+        </button>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!--语音弹框录音中-->
+<view class="yu_black" style="display:none">
+  <view class="yu_in">
+    <view class="yu_white">
+      <view class="w_title">
+        <view class="w_left">
+          <button class="btn w_cell" plain>重新录制</button>
+        </view>
+        <view class="w_right">
+          <button class="btn w_sure" plain>完成</button>
+        </view>
+      </view>
+      <view class="yu_center">
+        <view class="yu_tit">
+          <view class="Img_ing">
+            <image src="../../images/fatie/left.gif"></image>
+          </view>
+          <view class="yu_time">0:52</view>
+          <view class="Img_ing">
+            <image src="../../images/fatie/right.gif"></image>
+          </view>
+        </view>
+        <view class="yu_star">
+          <image src="../../images/fatie/10.png" class="yu_star_img ing"></image>
+        </view>
+        <view class="yu_txt">正在录音，点击停止录音</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!--语音弹框录音结束-->
+<view class="yu_black" style="display:none">
+  <view class="yu_in">
+    <view class="yu_white">
+      <view class="w_title">
+        <view class="w_left">
+          <button class="btn w_cell" plain>重新录制</button>
+        </view>
+        <view class="w_right">
+          <button class="btn w_sure" plain>完成</button>
+        </view>
+      </view>
+      <view class="yu_center">
+        <view class="yu_tit">
+          <view class="Img_ing">
+            <image src="../../images/fatie/left.png"></image>
+          </view>
+          <view class="yu_time">0:52</view>
+          <view class="Img_ing">
+            <image src="../../images/fatie/right.png"></image>
+          </view>
+        </view>
+        <view class="yu_star">
+          <image src="../../images/fatie/11.png" class="yu_star_img ing"></image>
+        </view>
+      </view>
+      <view class="w_bottom">
+        <button plain class="w_btn">
+          <image src="../../images/fatie/09.png" class="upload"></image>
+          上传本地音频
+        </button>
+      </view>
+    </view>
+  </view>
+</view>

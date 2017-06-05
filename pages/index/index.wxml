@@ -1,0 +1,156 @@
+<!--index.wxml-->
+<!--引入帖子列表局部页-->
+<import src="tplpage/artcont.wxml" />
+<import src="/wxParse/wxParse.wxml"/>
+<view class="classname">
+<!--头部-->
+<view class="banner">
+  <view class="banner_top">
+    <view class="b_qrcode" bindtap="qr_click" ><image src="../../images/index/01.png"></image></view>
+    <view class="b_search"><image src="../../images/index/02.png"></image></view>
+  </view>
+  <view class="header_img">
+    <view class="h_img">
+      <image src="{{flogo}}"></image>
+    </view>
+  </view>
+  <view class="name">{{fname}}</view>
+  <view class="b_bottom">
+    <view class="b_list">
+       话题 {{ftopiccount}}
+    </view>
+    <view class="b_list">
+        访问 {{fviewcount}}
+    </view>
+  </view>
+</view>
+<!--tab-->
+<view class="nav">
+   <scroll-view  class="type_nav" scroll-x="true" scroll-left="0" >
+      <view wx:key="" wx:for="{{types}}" bindtap="typeclick"  data-id="{{item.TId}}" class="nav_list {{item.TId==currentType?'active':''}}">{{item.TName}}</view>
+    </scroll-view> 
+   <view class="nav_right" bindtap="open_typesheet">
+      <view class="nav_r_icon"  >
+        <image src="../../images/index/06.png" class="img_01" style="display:none"></image>
+        <image src="../../images/index/07.png" class="img_02"></image>
+      </view>
+  </view>
+</view>
+<!--提示-->
+<view class="tips">
+  <view class="tips_list" wx:key="" wx:for="{{annoucements}}">
+    <view class="tip_icon"><image src="../../images/index/08.png"></image></view>
+    <view class="tip_txt">{{item}}</view> 
+  </view>
+</view>
+<block wx:key="" wx:for="{{listart}}" >
+      <template is="artcont" data="{{item}}" />
+</block>
+
+<!--发帖-->
+<view class="post">
+  <navigator url="../fatie/fatie" open-type="navigate"><image src="../../images/index/18.png"></image></navigator>
+</view>
+
+<!--底部-->
+<view class="footer">
+    <view class="footerIn">
+      <view class="foote_list">
+        <navigator url="/page/navigate/navigate?title=navigate" class="foot_in active">
+          <view class="f_img"><image src="../../images/index/20.png"></image></view>
+          <view class="f_txt">主页</view>
+        </navigator>
+      </view>
+      <view class="foote_list">
+        <navigator url="/page/navigate/navigate?title=navigate" class="foot_in">
+          <view class="f_img"><image src="../../images/index/21.png"></image></view>
+          <view class="f_txt">我的</view>
+        </navigator>
+      </view>
+    </view>
+</view>
+
+<!--二维码弹框-->
+<view class="qr_black" style="display:{{qrtoast==1?'':'none'}}">
+    <view class="qr_b_in">
+        <view class="qr_code">
+            <view class="qr_title">{{fname}}</view>
+            <view class="qr_qr">
+              <image src="{{fqrcode}}" mode="widthFix"></image>
+            </view>
+            <view class="qr_pro">长按关注公众号</view>
+        </view>
+        <view class="qr_close" bindtap="close_qrtoast">
+          <image src="../../images/index/29.png"></image>
+        </view>
+    </view>
+</view>
+
+<!--搜索帖子弹框-->
+<view class="se_black" style="display:none">
+  <view class="seIn">
+      <view class="se_w">
+        <view class="se_icon"><image src="../../images/index/30.png"></image></view>
+        <view class="se_input"><input placeholder="搜索帖子" placeholder-style="font-family: '微软雅黑'"/></view>
+        <navigator url="/page/navigate/navigate?title=navigate" class="se_right" open-type="navigateBack">取消</navigator>
+      </view>
+  </view>
+</view>
+
+<!--导航栏列表弹框-->
+<view class="nav_black"  style="display:{{tsheetshow==1?'':'none'}}">
+  <view class="nav_b_in">
+    <view class="nav_w">
+      <view class="nav_b_list">
+        <view wx:for="{{types}}"  wx:key="" bindtap="typeclick"  data-id="{{item.TId}}"  class="navList {{item.TId==currentType?'active':''}}" >{{item.TName}}</view>
+      </view>
+    </view>
+    <view class="quxiao">
+      <view class="quxiao_in" bindtap="close_typesheet">取消</view>
+    </view>
+  </view>
+</view>
+
+<!--评论--> 
+<view class="P_black" style="display:none">
+  <view class="PL_w">
+    <view class="PL_wIn">
+      <view class="pl_tit">回复</view>
+      <view class="pl_txt">
+        <textarea placeholder="发评论" class="pl_txtin" maxlength="-1"/>
+      </view>
+      <view class="pl_button">
+        <view class="pl_list pl_cell">取消</view>
+        <view class="pl_list pl_send active">发送</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<!--更多-->
+<view class="more_black" style="display:none;">
+  <view class="more_in">
+    <view class="more_w">
+      <view class="more_b">
+        <view class="more_list">置顶</view>
+        <view class="more_list">设置精华</view>
+        <view class="more_list">修改帖子</view>
+        <view class="more_list">删除帖子</view>
+        <view class="more_list">禁言</view>
+        <view class="more_list">拉黑</view>
+        <view class="more_list cell">取消</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!--更过操作后弹框-->
+<view class="toast" style="display:none">
+    <view class="toastImg"><image src="../../images/index/32.png"></image></view>
+    <view class="toast_txt">置顶成功</view>
+</view>
+</view>
+
+
+

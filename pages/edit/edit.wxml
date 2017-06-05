@@ -1,0 +1,26 @@
+<!--pages/edit/edit.wxml-->
+<!--当填写的名称大于8个字符时出现-->
+<view class="e_tips" style="display:none">昵称限制在8个字符以内</view>
+
+<view class="ed_con">
+    <view class="ed_list">
+        <view class="ed_left">
+            我的头像
+        </view>
+        <view class="ed_right">
+            <image src="../../images/edit/01.png" class="ed_img"></image>        
+        </view>
+    </view>
+    <view class="ed_list">
+        <view class="ed_left">
+            我的昵称
+        </view>
+        <view class="ed_right">
+            <input placeholder="其中" class="ed_input" />
+        </view>
+    </view>
+</view>
+
+<view class="but">
+    <view class="butIn">保存</view>
+</view>

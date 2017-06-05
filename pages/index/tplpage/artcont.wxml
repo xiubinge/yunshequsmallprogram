@@ -1,0 +1,99 @@
+<!--帖子-->
+<import src="/wxParse/wxParse.wxml"/>
+<template name="artcont">
+<view class="con">
+  <view class="con_header">
+    <view class="c_h_img"><image src="{{item.User.Headimgurl}}"></image></view>
+    <view class="c_h_center">
+      <view class="c_h_top">
+        <view class="block c_name">{{item.User.NickName}}</view>
+        <view class="block idcard">VIP{{item.User.Level}}</view>
+        <view wx:if="{{item.User.IsAdmin == 1}}" class="block card">管理员</view>
+        <view wx:if="{{item.isModerators}}" class="block card">版主</view>
+        <view wx:if="{{item.User.isProfession == 1}}" class="block card">专家</view>
+        <view wx:if="{{item.SignDay >= 7}}" class="block card">铁杆粉</view>
+      </view>
+      <view class="c_h_bottom">
+        <view class="block c_time">{{item.CreateDate}}</view>
+        <view class="block c_type">{{item.ArticleTypeName}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="conten">
+    <view wx:if="{{item.Title!=''}}" class="cTitle">
+        <navigator   url="/pages/detail/detail?artid={{item.Id}}&pageIndex={{item.CurrentPageIndex}}&from={{item.frompage}}&seeid={{item.SeeUId}}" hover-class="navigator-hover">{{item.Title}}</navigator>
+    </view>
+    <view wx:else class="cTitle">
+         <navigator  wx:if="{{item.VideoList!=''}}"  url="/pages/detail/detail?artid={{item.item.Id}}&pageIndex={{item.CurrentPageIndex}}&from={{item.frompage}}&seeid={{item.SeeUId}}" hover-class="navigator-hover">分享视频</navigator>
+      <navigator  wx:elif="{{item.VideoList!=''}}"  url="/pages/detail/detail?artid={{item.Id}}&pageIndex={{item.CurrentPageIndex}}&from={{item.frompage}}&seeid={{item.SeeUId}}" hover-class="navigator-hover">分享语音</navigator>
+       <navigator  wx:elif="{{item.VideoList!=''}}"  url="/pages/detail/detail?artid={{item.item.Id}}&pageIndex={{item.CurrentPageIndex}}&from={{item.frompage}}&seeid={{item.SeeUId}}" hover-class="navigator-hover">分享图片</navigator>
+     <navigator  wx:else  url="/pages/detail/detail?artid={{item.Id}}&pageIndex={{item.CurrentPageIndex}}&from={{item.frompage}}&seeid={{item.SeeUId}}" hover-class="navigator-hover">发起帖子</navigator>
+    </view>
+    <block class="c_pro" style="{{seeallart==0?'':'none'}}">
+      <navigator wx:if="{{item.ContentDesc!=''}}"  url="/pages/detail/detail?artid={{item.Id}}&pageIndex={{item.CurrentPageIndex}}&from={{item.frompage}}&seeid={{item.SeeUId}}"  hover-class="navigator-hover">
+      <template is="wxParse" data="{{wxParseData:item.ContentDesc}}"></template></navigator>
+    </block>
+     <block class="c_pro" style="{{seeallart==1?'':'none'}}">
+      <navigator wx:if="{{item.ContentDescAll!=''}}" style="{{seeallart==1?'':'none'}}" url="/pages/detail/detail?artid={{item.Id}}&pageIndex={{item.CurrentPageIndex}}&from={{item.frompage}}&seeid={{item.SeeUId}}"  hover-class="navigator-hover"> <template is="wxParse" data="{{wxParseData:item.ContentDescAll}}"></template></navigator>
+    </block>
+    <view style="{{seeallart==0?'':'none'}}" class="c_zhankai">展开</view>
+    <view style="{{seeallart==1?'':'none'}}" class="c_zhankai">收起</view>
+  </view>
+  <view wx:if="{{item.Voice!=null&&item.Voice.ServerId==''}}">
+  <audio poster="{{item.Voice.SongPic}}" name="{{item.Voice.SongName}}" author="{{item.Voice.Singer}}" src="{{item.Voice.TransFilePath}}" id="myAudio" controls loop></audio>
+  </view>
+   <view wx:if="{{item.Voice!=null&&item.Voice.ServerId!=''}}">
+    <audio wx:if="{{item.Voice.ConvertState==1}}" src="{{item.Voice.TransFilePath}}" id="myAudio" controls loop></audio>
+    <audio wx:else  src="{{item.Voice.DownLoadFileUrl}}" id="myAudio" controls loop></audio>
+  </view>
+<view wx:if="{{item.Video!=null}}" class="section tc">
+  <video src="{{item.Video.ConvertFilePath}}"   controls ></video>
+ </view>
+  <view wx:if="{{item.Images!=null&&item.Images.length}}" class="con_pic">
+    <view wx:key="" wx:for="{{item.Images}}" wx:for-item="image" class="pic_list">
+      <image src="image" mode="widthFix"></image>
+    </view>
+   </view>
+  <view wx:if="{{item.AddressText!=''}}" class="c_address">
+    <view class="addIn">
+      <view class="c_add_icon"><image src="../../images/index/09.png"></image></view>{{item.AddressText}}
+    </view>
+  </view>
+  <view class="cIcon">
+    <view class="Icon_left">浏览{{item.Click}}次</view>
+    <view class="Icon_right">
+      <!-- <view class="icon_img icon01"><image src="../../images/index/10.png/" mode="widthFix"></image></view>  -->
+      <view class="icon_img icon02"><image src="../../images/index/11.png/" mode="widthFix"></image></view>
+      <view class="icon_img icon03"><image src="../../images/index/13.png/" mode="widthFix"></image></view>
+      <view class="icon_img icon04"><image src="../../images/index/14.png/" mode="widthFix"></image></view>
+    </view>
+  </view>
+  <view class="shang" wx:if="{{item.RewardUsers!=null}}">
+    <view class="s_icon"><image src="../../images/index/15.png"></image></view>
+    <view class="s_img" wx:key="" wx:for="{{item.RewardUsers}}" wx:for-item="ruser">
+      <navigator url='/pages/personal/pensonal?uid={{ruser.Id}}' class="sImg"><image src="{{ruser.Headimgurl}}"></image></navigator>
+     
+    </view>
+    <view class="numbers">等{{item.Reward}}人赞赏</view>
+  </view>
+  <view class="shang" wx:if="{{item.PraiseUsers!=null}}">
+    <view class="s_icon"><image src="../../images/index/15.png"></image></view>
+    <view class="s_img" wx:key="" wx:for="{{item.PraiseUsers}}" wx:for-item="puser">
+      <navigator url='/pages/personal/pensonal?uid={{puser.Id}}' class="sImg"><image src="{{puser.Headimgurl}}"></image></navigator>
+    </view>
+    <view class="numbers">等{{item.Praise}}人点赞</view>
+  </view>
+
+  <view class="pinglun" wx:if="{{item.ArticleComments!=null && item.ArticleComments.length>0}}">
+    <view class="pL" wx:key="" wx:for="{{item.ArticleComments}}" wx:for-item="comment">
+      <view class="c_people">{{comment.ComUser.NickName}}</view>
+      <view wx:if="{{comment.DUser!=null}}"> 回复 <view class="c_people">2号车厢</view> </view> 
+      {{comment.ContentHtml}}
+    </view>
+  
+  </view>
+  <view class="see_more" wx:if="{{item.CommentCount>5}}">
+    查看全部{{item.CommentCount}}条评论
+  </view>
+</view>
+</template>

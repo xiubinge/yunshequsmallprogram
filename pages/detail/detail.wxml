@@ -1,0 +1,297 @@
+<!--pages/detail/detail.wxml-->
+<view class="con">
+  <view class="con_header">
+    <view class="c_h_img"><image src="../../images/detail/01.png"></image></view>
+    <view class="c_h_center">
+      <view class="c_h_top">
+        <view class="block c_name">小小牵牛花</view>
+        <view class="block idcard">VIP4</view>
+        <view class="block card">管理员</view>
+      </view>
+      <view class="c_h_bottom">
+        <view class="block c_time">2017-05-10 14:00</view>
+        <view class="block c_view">浏览289</view>
+        <view class="block c_type">多肉</view>
+      </view>
+    </view>
+  </view>
+  <view class="d_detail">
+        <view class="d_title">胡歌教你怎么养一盆好看的多肉植物胡歌教你怎么养一盆好看的多肉植物</view>
+        <view class="d_pro">我该怎么说，怎么说还好叶子这么大，好不容易大一点换了个花盆，就看到大降价。叶子小叶子郁郁葱葱的真的看耶是个多听你的学到哪去呢就看到大降价。</view>
+        <view class="d_img">
+          <image src="../../images/detail/02.png" mode="widthFix"></image>
+          <image src="../../images/detail/02.png" mode="widthFix"></image>
+        </view>
+        <view class="d_img_bot">
+          <view class="dimg_left">
+              <view class="icon_address"><image src="../../images/detail/03.png"></image></view>
+              <view class="address_txt">赤峰市林西县金城街</view>
+          </view>
+          <view class="dimg_right">
+              <view class="d_r">举报</view>
+              <view class="d_r">
+                <view class="dr_img"><image src="../../images/detail/04.png"></image></view>
+                <view class="dr_img" style="display:none"><image src="../../images/detail/17.png"></image></view>
+                <view class="dr_num">12</view>
+              </view>
+              <view class="d_r">
+              <view class="dr_img"><image src="../../images/detail/05.png"></image></view>
+              </view>
+          </view>
+        </view>
+  </view>
+  <view class="d_shang">
+    <view class="d_s">
+      赞赏
+    </view>
+    <view class="d_shang_txt">
+        <view class="d_s_num">12</view>人打赏
+    </view>
+    <view class="shang_img">
+      <image src="../../images/detail/07.png" class="sImg"></image>
+      <image src="../../images/detail/07.png" class="sImg"></image>
+      <image src="../../images/detail/07.png" class="sImg"></image>
+      <image src="../../images/detail/07.png" class="sImg"></image>
+      <image src="../../images/detail/07.png" class="sImg"></image>
+      <image src="../../images/detail/07.png" class="sImg"></image>
+      <image src="../../images/detail/07.png" class="sImg"></image>
+      <image src="../../images/detail/07.png" class="sImg"></image>
+      <image src="../../images/detail/07.png" class="sImg"></image>
+      <image src="../../images/detail/07.png" class="sImg"></image>
+      <image src="../../images/detail/07.png" class="sImg"></image>
+      <image src="../../images/detail/07.png" class="sImg"></image>
+      <image src="../../images/detail/07.png" class="sImg"></image>
+      <image src="../../images/detail/07.png" class="sImg"></image>
+      <image src="../../images/detail/07.png" class="sImg"></image>
+      <image src="../../images/detail/08.png" class="sImg"></image>
+    </view>
+  </view>
+ 
+</view>
+<!--互动-->
+<view class="hudong">
+  <view class="hd_title">
+    <view class="hd_t_left">全部互动</view>
+    <view class="hd_t_right">
+        <view class="hd_order"><image src="../../images/detail/13.png" class="oder_icon"></image>顺序</view>
+    </view>
+  </view>
+  <view class="hd_zan">
+    <view class="hd_z_left"><image src="../../images/detail/06.png"></image></view>
+    <view class="hd_z_center">
+        <navigator url="/page/navigate/navigate?title=navigate" class="z_img">
+          <image src="../../images/detail/07.png"></image>
+        </navigator>
+        <navigator url="/page/navigate/navigate?title=navigate" class="z_img">
+          <image src="../../images/detail/07.png"></image>
+        </navigator>
+        <navigator url="/page/navigate/navigate?title=navigate" class="z_img">
+          <image src="../../images/detail/07.png"></image>
+        </navigator>
+        <navigator url="/page/navigate/navigate?title=navigate" class="z_img">
+          <image src="../../images/detail/07.png"></image>
+        </navigator>
+        <navigator url="/page/navigate/navigate?title=navigate" class="z_img">
+          <image src="../../images/detail/07.png"></image>
+        </navigator>
+        <navigator url="/page/navigate/navigate?title=navigate" class="z_img">
+          <image src="../../images/detail/07.png"></image>
+        </navigator>
+        <navigator url="/page/navigate/navigate?title=navigate" class="z_img">
+          <image src="../../images/detail/07.png"></image>
+        </navigator>
+        <navigator url="/page/navigate/navigate?title=navigate" class="z_img">
+          <image src="../../images/detail/08.png"></image>
+        </navigator>
+    </view>
+    <view class="hd_z_num">等38人点赞</view>
+  </view>
+  <view class="hd_list_con">
+    <view class="hd_list">
+      <view class="con_header">
+        <view class="c_h_img"><image src="../../images/detail/01.png"></image></view>
+        <view class="c_h_center">
+            <view class="c_h_top">
+              <view class="block c_name">小小牵牛花</view>
+              <view class="block idcard">VIP4</view>
+              <view class="block card">专家</view>
+            </view>
+            <view class="c_h_bottom">
+              <view class="block c_time">14小时前</view>
+              <view class="block c_view">1楼</view>
+            </view>
+        </view>
+        <view class="list_zan">
+          18 <view class="list_zan_icon" style="display:none"><image src="../../images/detail/10.png"></image></view>
+          <view class="list_zan_icon"><image src="../../images/detail/09.png"></image></view>
+        </view>
+      </view>
+      <view class="hd_pro">
+        <view class="hd_conIn">
+          很好看哦，好喜欢很好看哦，好喜欢很好看哦，好喜欢很好看哦，好喜欢很好看哦，好喜欢
+        </view>
+      </view>
+      
+    </view>
+    <view class="hd_list">
+      <view class="con_header">
+        <view class="c_h_img"><image src="../../images/detail/14.png"></image></view>
+        <view class="c_h_center">
+            <view class="c_h_top">
+              <view class="block c_name">小小牵牛花</view>
+              <view class="block idcard">VIP2</view>
+            </view>
+            <view class="c_h_bottom">
+              <view class="block c_time">14小时前</view>
+              <view class="block c_view">1楼</view>
+            </view>
+        </view>
+        <view class="list_zan">
+          18 <view class="list_zan_icon"><image src="../../images/detail/10.png"></image></view>
+          <view class="list_zan_icon" style="display:none"><image src="../../images/detail/09.png"></image></view>
+        </view>
+      </view>
+      <view class="hd_pro">
+        <view class="hd_conIn">
+         回复 <view class="other_name">@丁香花</view> ：很好看哦，好喜欢很好看哦
+        </view>
+      </view>
+      
+    </view>
+    <view class="hd_list">
+      <view class="con_header">
+        <view class="c_h_img"><image src="../../images/detail/14.png"></image></view>
+        <view class="c_h_center">
+            <view class="c_h_top">
+              <view class="block c_name">丁香花</view>
+              <view class="block idcard">VIP2</view>
+            </view>
+            <view class="c_h_bottom">
+              <view class="block c_time">14小时前</view>
+              <view class="block c_view">1楼</view>
+            </view>
+        </view>
+        <view class="list_zan">
+          18 <view class="list_zan_icon"><image src="../../images/detail/10.png"></image></view>
+          <view class="list_zan_icon" style="display:none"><image src="../../images/detail/09.png"></image></view>
+        </view>
+      </view>
+      <view class="hd_pro">
+        <view class="hd_conIn">
+         回复 <view class="other_name">@小小牵牛花</view> ：很好看哦，好喜欢很好看哦
+        </view>
+      </view>
+      
+    </view>
+    <view class="hd_more">
+      已显示全部
+    </view>
+  </view>
+</view>
+
+<!--关注-->
+<view class="d_care">
+  <view class="d_care_left">
+    <view class="care_img"><image src="../../images/detail/11.png"></image></view>
+  </view>
+  <view class="care_center">
+      <view class="care_name">相约定安</view>
+      <view class="care_pro">定南交友社区，微信公众号xydingnan</view>
+  </view>
+  <view class="care_care">
+    <view class="care_in">关注</view>
+  </view>
+</view>
+
+<!--底部评论-->
+<view class="d_pl">
+  <view class="d_pl_left">
+    <view class="pl_left">
+     <view class="pl">评论一下吧...</view>
+     <view class="pl_num">3条评论</view> 
+    </view>
+    
+  </view>
+  <view class="d_pl_right">
+      <view class="d_pl_zan">
+        <view class="dz_icon"><image src="../../images/detail/15.png"></image>23</view>
+        <view class="dz_icon" style="display:none"><image src="../../images/detail/16.png"></image>23</view>
+        <view class="dz_icon ds_icon"><image src="../../images/detail/12.png"></image>23</view>
+      </view>
+  </view>
+</view>
+
+<!--删除评论弹框-->
+<view class="d_black" style="display:none">
+  <view class="d_b_in">
+    <view class="d_d_w">
+      <view class="d_delete">删除评论</view>
+      <view class="d_cell1">取消</view>
+    </view>
+  </view>
+</view>
+
+<!--收藏成功弹框-->
+<view class="d_collect" style="display:none">
+  <view class="d_c_img"><image src="../../images/detail/18.png"></image></view>
+  <view class="d_c_txt">收藏成功</view>
+</view>
+
+<!--评论弹框-->  
+<view class="P_black" style="display:none">
+  <view class="PL_w">
+    <view class="PL_wIn">
+      <view class="pl_tit">回复</view>
+      <view class="pl_txt">
+        <textarea placeholder="发评论" class="pl_txtin" maxlength="-1"/>
+      </view>
+      <view class="pl_button">
+        <view class="pl_list pl_cell">取消</view>
+        <view class="pl_list pl_send active">发送</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!--打赏弹框-->
+<view class="d_black" style="display:none">
+  <view class="d_b_in">
+    <view class="s_w">
+        <view class="s_w_in">
+          <view class="s_top">
+            <view class="s_circle"></view>
+            <view class="s_img_icon">
+              <image src="../../images/detail/19.png"></image>
+            </view>
+          </view>
+          <view class="s_img_txt">西门吹雪</view>
+          <view class="s_money">
+            <view class="s_money_list">200元</view>
+            <view class="s_money_list">100元</view>
+            <view class="s_money_list">500元</view>
+            <view class="s_money_list">20元</view>
+            <view class="s_money_list">8元</view>
+            <view class="s_money_list">2元</view>
+          </view>
+          <view class="s_other">
+                其他金额
+          </view>
+        </view>
+    </view>
+  </view>
+</view>
+
+<!--其他打赏页面-->
+<view class="d_black" style="display:">
+  <view class="d_b_in">
+    <view class="o_w">
+      <view class="o_title">其他金额</view>
+      <view class="o_con">
+        <view class="o_input">
+          <input placeholder="金额(元)：请输入0.1-1000之间数字" class="o_inputIn" placeholder-style="font-family: '微软雅黑''"/>
+        </view>
+        <view class="o_btn">赞赏</view>
+      </view>
+    </view>
+  </view>
+</view>

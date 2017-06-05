@@ -1,0 +1,47 @@
+<!--pages/me_shangjin/me_shangjin.wxml-->
+<view class="sj_header">
+    <view class="sj_bg"></view>
+    <view class="sj_h_in">
+        <view class="sj_header_img">
+            <image src="../../images/index/24.png"></image>
+        </view>
+        <view class="sj_name">小小牵牛花</view>
+        <view class="sj_tixian">
+            累计提现： <view class="lei">999</view> 元
+        </view>
+    </view>
+</view>
+
+<!--列表-->
+<view class="sj_list">
+    <navigator url="/page/navigate/navigate?title=navigate" class="sj_list_in">
+        <view class="sj_left">我的赏金</view>
+        <view class="sj_right">
+            <view class="arrow"></view>
+        </view>
+    </navigator>
+    <navigator url="/page/navigate/navigate?title=navigate" class="sj_list_in">
+        <view class="sj_left">联系客服</view>
+        <view class="sj_right">
+            <view class="arrow"></view>
+        </view>
+    </navigator>
+    <navigator url="/page/navigate/navigate?title=navigate" class="sj_list_in">
+        <view class="sj_left">关于我们</view>
+        <view class="sj_right">
+            <view class="arrow"></view>
+        </view>
+    </navigator>
+</view>
+<!--说明文字-->
+<view class="txt_decare">
+    <view class="sj_txt t_title">关于赏金</view>
+    <view class="sj_txt t_txt">赏金=打赏金额-微赞平台服务费-论坛运营者提成</view>
+    <view class="sj_txt t_title">其中：</view>
+    <view class="sj_txt t_txt">微赞平台服务费=打赏金额*2%</view>
+    <view class="sj_txt t_txt">论坛运营者提成=打赏金额*a%(运营者自主设置，0~20%之间)</view>
+    <view class="sj_txt t_care">注意：赏金收入超过1元即可提现，每天可以手动提现一次，手动提现后将在1-3个工作日内到账。</view>
+</view>
+
+
+

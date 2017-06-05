@@ -1,0 +1,31 @@
+<!--pages/sj_liushui/sj_liushui.wxml-->
+<view class="r_title">
+    <view class="tx_t r1">收益类型</view>
+    <view class="tx_t r2">收益金额</view>
+    <view class="tx_t r3">日期</view>
+</view>
+<view class="r_list">
+    <view class="rl rl1">赞赏</view>
+    <view class="rl rl2">0.99</view>
+    <view class="rl rl3">2017/10/29 11:19</view>
+</view>
+<view class="r_list">
+    <view class="rl rl1">众筹</view>
+    <view class="rl rl2">0.99</view>
+    <view class="rl rl3">2017/10/29 11:19</view>
+</view>
+<view class="r_list">
+    <view class="rl rl1">悬赏</view>
+    <view class="rl rl2">0.99</view>
+    <view class="rl rl3">2017/10/29 11:19</view>
+</view>
+<view class="r_list">
+    <view class="rl rl1">赞赏</view>
+    <view class="rl rl2">0.99</view>
+    <view class="rl rl3">2017/10/29 11:19</view>
+</view>
+<view class="r_list">
+    <view class="rl rl1">赞赏</view>
+    <view class="rl rl2">0.99</view>
+    <view class="rl rl3">2017/10/29 11:19</view>
+</view>

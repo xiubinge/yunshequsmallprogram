@@ -1,0 +1,101 @@
+<!--pages/personal/personal.wxml-->
+<view class=wd_header">
+    <view class="edit">
+        <view class="edit_icon">
+            <navigator url="../edit/edit" class="foot_in active">
+                <image src="../../images/wode/01.png"></image>
+            </navigator>
+        </view>
+    </view>
+    <view class="wd_img">
+        <view class="wd_img_in">
+            <image src="../../images/wode/08.png" ></image>
+        </view>
+        <view class="img_txt">相约定安</view>
+    </view>
+</view>
+<!--列表内容-->
+<view class="wd_con">
+    <view class="wd_list">
+        <navigator url="../me_fatie/me_fatie" class="list">
+            <view class="list_icon">
+                <image src="../../images/wode/02.png" class="icon01"></image>
+            </view>
+            <view class="list_left">
+                我的发帖
+            </view>
+            <view class="list_num">共123篇</view>
+            <view class="list_right">
+                <view class="list_arrow"></view>
+            </view>
+        </navigator>
+        <navigator url="/page/navigate/navigate?title=navigate" class="list">
+            <view class="list_icon">
+                <image src="../../images/wode/03.png" class="icon02"></image>
+            </view>
+            <view class="list_left">
+                我的收藏
+            </view>
+            <view class="list_num"></view>
+            <view class="list_right">
+                <view class="list_arrow"></view>
+            </view>
+        </navigator>
+    </view>
+
+    <view class="wd_list">
+        <navigator url="../me_shangjin/me_shangjin" class="list">
+            <view class="list_icon">
+                <image src="../../images/wode/04.png" class="icon03"></image>
+            </view>
+            <view class="list_left">
+                我的赏金
+            </view>
+            <view class="list_num">540</view>
+            <view class="list_right">
+                <view class="list_arrow"></view>
+            </view>
+        </navigator>
+        <navigator url="/page/navigate/navigate?title=navigate" class="list">
+            <view class="list_icon">
+                <image src="../../images/wode/05.png" class="icon04"></image>
+            </view>
+            <view class="list_left">
+                联系客服
+            </view>
+            <view class="list_num"></view>
+            <view class="list_right">
+                <view class="list_arrow"></view>
+            </view>
+        </navigator>
+        <navigator url="../about/about" class="list">
+            <view class="list_icon">
+                <image src="../../images/wode/06.png" class="icon05"></image>
+            </view>
+            <view class="list_left">
+                关于我们
+            </view>
+            <view class="list_num"></view>
+            <view class="list_right">
+                <view class="list_arrow"></view>
+            </view>
+        </navigator>
+    </view>
+</view>
+<!--底部-->
+<view class="footer">
+    <view class="footerIn">
+      <view class="foote_list">
+        <navigator url="../index/index" class="foot_in">
+          <view class="f_img"><image src="../../images/wode/09.png"></image></view>
+          <view class="f_txt">主页</view>
+        </navigator>
+      </view>
+      <view class="foote_list">
+        <navigator url="/page/navigate/navigate?title=navigate" class="foot_in active">
+          <view class="f_img"><image src="../../images/wode/10.png"></image></view>
+          <view class="f_txt">我的</view>
+        </navigator>
+      </view>
+    </view>
+</view>

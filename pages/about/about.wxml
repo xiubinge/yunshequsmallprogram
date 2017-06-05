@@ -1,0 +1,18 @@
+<!--pages/about/about.wxml-->
+<view class="about_header">
+    <view class="ab_img">
+        <image src="../../images/about/01.png"></image>
+    </view>
+    <view class="ab_title">相约定安</view>
+    <view class="ab_txt">
+        定南地区最好的微社区，没有之一
+    </view>
+</view>
+
+<view class="about_bot">
+    <view class="ab_bot_img">
+        <image src="../../images/about/02.png"></image>
+    </view>
+    <view class="ab_txt">微赞提供技术支持</view>
+    <view class="ab_txt ab_txt1">www.vzan.com</view>
+</view>
